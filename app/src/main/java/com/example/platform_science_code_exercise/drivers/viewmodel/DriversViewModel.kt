@@ -13,9 +13,10 @@ import java.io.InputStreamReader
 import com.google.gson.reflect.TypeToken
 import com.google.gson.Gson
 
-class DriversViewModel: ViewModel() {
+class DriversViewModel : ViewModel() {
 
     private val TAG = "DriversViewModel"
+
     // Create a live data for drivers array
     private var _drivers: MutableLiveData<List<Driver>> = MutableLiveData()
     val drivers: LiveData<List<Driver>>

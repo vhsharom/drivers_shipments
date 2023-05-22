@@ -9,14 +9,15 @@ import com.example.platform_science_code_exercise.drivers.model.Driver
 import com.example.platform_science_code_exercise.R
 import com.example.platform_science_code_exercise.core.OnItemClickListener
 
-class DriversViewHolder: RecyclerView.ViewHolder {
+class DriversViewHolder : RecyclerView.ViewHolder {
     val driverName: TextView
-    constructor(itemView: View): super(itemView) {
+
+    constructor(itemView: View) : super(itemView) {
         driverName = itemView.findViewById<TextView>(R.id.tv_driver_name)
     }
 }
 
-class DriversAdapter(): RecyclerView.Adapter<DriversViewHolder>() {
+class DriversAdapter() : RecyclerView.Adapter<DriversViewHolder>() {
 
     var drivers = ArrayList<Driver>()
     private var onItemClickListener: OnItemClickListener? = null

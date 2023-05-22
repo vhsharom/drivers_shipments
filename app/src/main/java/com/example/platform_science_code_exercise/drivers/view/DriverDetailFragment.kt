@@ -12,8 +12,10 @@ import com.example.platform_science_code_exercise.drivers.viewmodel.DriversViewM
 
 class DriverDetailFragment : Fragment() {
 
-    private val viewModel: DriversViewModel by activityViewModels()
     private val TAG = "DriverDetailFragment"
+    private val viewModel: DriversViewModel by activityViewModels()
+
+    // Binding views
     private var views: FragmentDriverDetailBinding? = null
 
     companion object {

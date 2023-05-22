@@ -19,6 +19,7 @@ class DriversFragment : Fragment(), OnItemClickListener {
     private val TAG = "DriversFragment"
     private val viewModel: DriversViewModel by activityViewModels()
     private var driversAdapter: DriversAdapter? = null
+
     // Binding views
     private var views: FragmentDriversBinding? = null
 
